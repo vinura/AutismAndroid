@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestXmarian.MainPage" 
+             NavigationPage.Title="Autism Test">
+    
+  
+   
+
+    <ContentPage.Content>
+
+        <ScrollView>
+                <StackLayout Spacing="10" x:Name="layout">
+
+                  <!--Label Text="Autism Test" FontSize="Large"/-->
+
+                    <Label Text="I often notice small sounds when others do not" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a1" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="I usually concentrate more on the whole picture, rather than the small details" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a2" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="I find it easy to do more than one thing at once" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a3" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="If there is an interruption, I can switch back to what I was doing very quickly" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a4" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="I find it easy to read between the lines when someone is talking to me" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a5" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="I know how to tell if someone listening to me is getting bored" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a6" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="When I'm reading a story I find it difficult to work out the character's intentions" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a7" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="I like to collect information about categories of things" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a8" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="I find it easy to work out what someone is thinking or feeling just by looking at their face" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a9" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="I find it difficult to work out peoples intentions" VerticalOptions="Start" FontSize="Medium"/>
+
+                    <Picker x:Name="a10" HorizontalOptions="FillAndExpand">
+                        <Picker.Items>
+                                <x:String>NO</x:String>
+                                <x:String>YES</x:String>
+                            </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Age" VerticalOptions="Start" FontSize="Medium"/>
+                        <Entry x:Name="age" Keyboard="Numeric"/>
+
+                    <Label Text="Sex" VerticalOptions="Start" FontSize="Medium"/>
+                        <Picker x:Name="sex" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Female</x:String>
+                                <x:String>Male</x:String>
+                            </Picker.Items>
+                        </Picker>
+                  
+                  <Label Text="Ethnicity" VerticalOptions="Start" FontSize="Medium"/>
+                 <Picker x:Name="ethnicity" HorizontalOptions="FillAndExpand">
+                                    <Picker.Items>
+                                         <x:String>White</x:String>
+                                         <x:String>Middle Eastern</x:String>
+                                         <x:String>Asian</x:String>
+                                         <x:String>White European</x:String>
+                                         <x:String>Black</x:String>
+                                         <x:String>Latino</x:String>
+                                         <x:String>Hispanic</x:String>                                    
+                                    </Picker.Items>
+                                </Picker>
+        
+              
+                    <Label Text="Jaundice" VerticalOptions="Start" FontSize="Medium"/>
+                    <Picker x:Name="jaundice" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>YES</x:String>
+                                <x:String>NO</x:String>
+                            </Picker.Items>
+                        </Picker>
+                  
+                    <Label Text="Does anyone in your family have ASD ? " VerticalOptions="Start" FontSize="Medium"/>
+                      <Picker x:Name="asd" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>YES</x:String>
+                                <x:String>NO</x:String>
+                            </Picker.Items>
+                        </Picker>
+                  
+        
+                        <Label Text="Language " VerticalOptions="Start" FontSize="Medium"/>
+                  
+                      <Picker x:Name="language" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>English</x:String>
+                                <x:String>Other</x:String>
+                            </Picker.Items>
+                        </Picker>
+                                               
+                        <Label Text="User " VerticalOptions="Start" FontSize="Medium"/>
+                              <Picker x:Name="user" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Parent</x:String>
+                                <x:String>Self</x:String>
+                            </Picker.Items>
+                        </Picker>
+                  
+        
+       
+                        <Button x:Name="submit" Text="Test" BorderWidth="20" Clicked="Post_Clicked"/>
+
+
+                </StackLayout>
+        </ScrollView>
+   </ContentPage.Content>
+
+  
+</ContentPage>
+
